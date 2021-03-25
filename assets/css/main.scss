@@ -1,6 +1,16 @@
 @import 'base.scss';
 
+//Segments - Secciones
+//Multiuse
 @import 'segments/header.scss';
 @import 'segments/footer.scss';
+//Monouse
+@import 'segments/sections.scss';
 
+//Elements
+@import 'elements/texts.scss';
+@import 'elements/buttons.scss';
+
+//Components - Divs, Forms
 @import 'components/nav.scss';
+@import 'components/form.scss'

@@ -21,8 +21,23 @@ function add_support(){
 }
 add_action('after_setup_theme','add_support');
 
-//Para importar Css
-wp_enqueue_style( 'main', get_template_directory_uri().'/assets/css/main.css', 'all');
+//Para agregar los assets al tema
+function add_Assets(){
+	//Css
+	wp_enqueue_style( 
+		'main', 
+		get_template_directory_uri().'/assets/css/main.css', 
+		'all'
+	);
+	//Scripts
+	wp_enqueue_script( 
+		'create-account', 
+		get_template_directory_uri().'/assets/js/create-account.js',
+		true, false
+	);
+}
+add_action('wp_enqueue_scripts', 'add_Assets');
+
 
 //Iniciar template con los menus
 function init_template(){

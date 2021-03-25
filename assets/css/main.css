@@ -31,6 +31,61 @@ footer .left {
   text-align: end;
 }
 
+.section-risen {
+  margin: 50px 25px;
+  border: 1px solid #000;
+  border-radius: 25px;
+  box-shadow: 0px 5px 5px black;
+  padding: 15px 25px 25px 25px;
+}
+.section-risen button {
+  width: 400px;
+}
+
+/*Estilo default de todas las etiquetas semanticas de texto
+h1, h2, h3, h4, h5, h6, p, span, label
+*/
+h1, h2, h3, h4, h5, h6, p, span, label, input, li {
+  font-family: "Roboto", Condensed;
+}
+
+h1 {
+  font-size: 75px;
+}
+
+label {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+input {
+  font-size: 20px;
+  padding: 0 5px;
+  font-weight: lighter;
+  box-sizing: border-box;
+}
+
+.required {
+  color: #EE3B24;
+}
+
+button {
+  color: #FFF;
+  background-color: #EE3B24;
+  font-weight: bold;
+  font-size: 22px;
+  border: 0 solid;
+  border-radius: 10px;
+  height: 50px;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.75;
+  transition-property: all;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-in;
+}
+
 .menu-main-container {
   width: 100%;
   display: flex;
@@ -54,6 +109,51 @@ footer .left {
   color: #EE3B24;
   font-weight: bold;
   text-decoration: underline;
+}
+
+form {
+  flex-direction: column;
+}
+form label {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+form input {
+  height: 40px;
+}
+form button {
+  margin: 15px 0;
+}
+
+#form-logIn {
+  display: flex;
+}
+#form-logIn input {
+  width: 400px;
+  font-weight: lighter;
+}
+
+#form-signUp {
+  display: none;
+}
+#form-signUp div {
+  display: flex;
+  box-sizing: border-box;
+}
+#form-signUp div label {
+  display: flex;
+  align-items: center;
+  width: 33%;
+}
+#form-signUp div input {
+  padding: 0;
+  width: 32%;
+  margin-right: 1%;
+  text-align: center;
+}
+#form-signUp div .lastInput {
+  margin-right: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
