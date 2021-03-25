@@ -1,0 +1,27 @@
+/*Estilo default de todas las etiquetas semanticas de texto
+h1, h2, h3, h4, h5, h6, p, span, label
+*/ 
+h1,h2,h3,h4,h5,h6,p,span,label,input,li{
+    font-family: "Roboto", Condensed;
+}
+
+h1{
+    font-size: 75px;
+}
+
+label{
+    font-size: 24px;
+    font-weight: normal;
+}
+
+input{ 
+    font-size: 20px;
+    padding: 0 5px;
+    font-weight: lighter;
+    box-sizing: border-box;
+}
+
+//Spans - Class
+.required{
+    color: #EE3B24;
+}
