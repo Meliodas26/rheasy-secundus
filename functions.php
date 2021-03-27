@@ -35,6 +35,8 @@ function add_Assets(){
 		get_template_directory_uri().'/assets/js/create-account.js',
 		true, false
 	);
+	//Icons
+	wp_enqueue_script( 'icons', "https://code.iconify.design/1/1.0.7/iconify.min.js",false);
 }
 add_action('wp_enqueue_scripts', 'add_Assets');
 
@@ -45,7 +47,7 @@ function init_template(){
 	add_theme_support( 'title-tag');
 	register_nav_menus(
 			array(
-					'main' => 'Menú Principal'
+				'main' => 'Menú Principal'
 			)
 	);
 }

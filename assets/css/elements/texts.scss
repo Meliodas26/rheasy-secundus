@@ -2,15 +2,22 @@
 h1, h2, h3, h4, h5, h6, p, span, label
 */ 
 h1,h2,h3,h4,h5,h6,p,span,label,input,li{
-    font-family: "Roboto", Condensed;
+    font-family: 'Raleway', sans-serif;
 }
 
 h1{
     font-size: 75px;
+    height: 80px;
 }
 
-label{
+label,p{
     font-size: 24px;
+}
+
+p{
+    font-weight: lighter;
+}
+label{
     font-weight: normal;
 }
 

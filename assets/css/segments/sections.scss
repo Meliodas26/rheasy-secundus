@@ -1,10 +1,40 @@
+section{
+    margin: 25px;
+}
+.section-general{
+    div{
+        display: flex;
+        .left,.right{
+            width: 50%;
+            flex-direction: column;
+        }
+        .left{
+            p{
+                margin-top:5px
+            }
+        }
+        .right{
+            display: flex;
+            height: 80px;
+            justify-content: center;
+            align-items: flex-end;
+        }
+    }
+}
+
+.section-products{
+    button{
+        width: 100%;
+    }
+}
+
+//Para las secciones en mi cuenta...
 .section-risen{
     margin: 50px 25px;
     border: 1px solid #000;
     border-radius: 25px;
     box-shadow: 0px 5px 5px black;
     padding: 15px 25px 25px 25px;
-    button{
-        width: 400px;
-    }
 }
+
+
